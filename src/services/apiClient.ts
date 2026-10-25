@@ -1,6 +1,7 @@
 import { API_BASE_URL } from "@/constants";
 import axios from "axios";
 
+// axios initial configs
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
   params: {

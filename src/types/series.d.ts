@@ -11,15 +11,6 @@ type Series = {
   origin_country: string[];
 };
 
-type SeriesGenre = {
-  id: number;
-  name: string;
-};
-
-type SeriesGenresApiResponse = {
-  genres: SeriesGenre[];
-};
-
 type SeriesQuery = {
   page: number;
   searchText: string;
@@ -34,5 +25,19 @@ type SeriesApiResponse = {
   total_results: number;
 };
 
-export { Series, SeriesApiResponse, SeriesQuery };
-export type { SeriesGenre, SeriesGenresApiResponse };
+type SeriesGenre = {
+  id: number;
+  name: string;
+};
+
+type SeriesGenresApiResponse = {
+  genres: SeriesGenre[];
+};
+
+export type {
+  SeriesGenre,
+  SeriesGenresApiResponse,
+  Series,
+  SeriesApiResponse,
+  SeriesQuery,
+};
